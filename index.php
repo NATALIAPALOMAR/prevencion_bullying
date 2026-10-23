@@ -4,14 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prevención del Bullying</title>
+    <title>CBTis49 safe place</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <header>
-        <h1>Hablemos del bullying</h1>
-        <p>Juntos podemos construir una escuela con respeto y empatía.</p>
-    </header>
+   <header class="encabezado">
+    <div class="cbtis49.png">
+        <img src="cbtis49.png" alt="Logo de prevención del bullying">
+        <h1>NO MAS BULLYING</h1>
+    </div>
+
+    <p>Una comunidad segura comienza con el respeto.</p>
+</header>
 
     <main>
         <section>
