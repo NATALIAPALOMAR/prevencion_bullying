@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     if ($mensaje !== "") {
         try {
-            $sql = "INSERT INTO mensajes (mensaje) VALUES (:mensaje)";
+           $sql = "INSERT INTO mensajes (mensaje, fecha) VALUES (:mensaje, NOW())";
             $consulta = $conexion->prepare($sql);
             $consulta->execute(["mensaje" => $mensaje]);
             $mensaje_guardado = true;
