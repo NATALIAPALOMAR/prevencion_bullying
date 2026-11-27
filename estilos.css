@@ -1,3 +1,4 @@
+AGREGAMOS ESTILOS 
 
 * {
     box-sizing: border-box;
@@ -6,71 +7,179 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #eeeeee;
-    color: #555555;
     line-height: 1.6;
+    color: #292929;
+    background: #f7f4f8;
 }
 
-header {
-    background: linear-gradient(135deg, #e91e8f, #c2187a);
+
+ENCABEZADO
+
+.encabezado {
+    background: #922578;
     color: white;
     text-align: center;
     padding: 30px 20px;
 }
 
-header h1 {
-    margin-top: 0;
-    font-size: 30px;
-}
-
-main {
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 0 20px;
-}
-
-section {
-    background-color: #f5f5f5;
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 5px;
-}
-
-h2 {
-    color: #95518f;
-}
-
-li {
-    margin-bottom: 5px;
-}
-
-a {
-    color: #95518f;
-    font-weight: bold;
-}
-
-footer {
-    background-color: #95518f;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 30px;
-}
-
- 
-.encabezado {
+.logo-contenedor {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 15px;
 }
 
-.encabezado img {
-    width: 70px;
-    height: 70px;
+.logo-contenedor img {
+    width: 75px;
+    height: 75px;
     object-fit: contain;
 }
 
-.encabezado h1 {
+.logo-contenedor h1 {
     margin: 0;
+    font-size: 36px;
+}
+
+.encabezado p {
+    margin-top: 15px;
+}
+
+
+CONTENIDO PRINCIPAL
+
+main {
+    width: 100%;
+    max-width: 1100px;
+    margin: 24px auto;
+    padding: 0 16px;
+}
+
+
+SECCIONES 
+
+section {
+    background: white;
+    padding: 18px;
+    margin-bottom: 18px;
+    border-radius: 10px;
+}
+
+
+IMAGENES TAMAÑOS 
+
+.galeria-imagenes {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 15px;
+    width: 100%;
+    margin: 0 auto 25px;
+}
+
+.galeria-imagenes img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border: 5px solid pink;
+    border-radius: 10px;
+}
+
+TEXTO 
+
+.texto-bullying h2 {
+    color: #8e246f;
+    margin-top: 0;
+}
+
+.texto-bullying p {
+    font-size: 17px;
+}
+
+
+AGREGAMOS TITULOS 
+
+h2 {
+    color: #8e246f;
+}
+
+
+/* ENLACES */
+
+a {
+    color: #7a1d61;
+    font-weight: bold;
+}
+
+
+AGREGAMOS UN PIE DE PAGINA 
+
+footer {
+    text-align: center;
+    padding: 18px;
+    background: #ece5ed;
+}
+
+
+AGREGAMOS LAS IMAGENS MAS PEQUELÑAS 
+
+@media (max-width: 600px) {
+
+    .logo-contenedor h1 {
+        font-size: 24px;
+    }
+
+    .galeria-imagenes {
+        grid-template-columns: 1fr;
+    }
+
+    .galeria-imagenes img {
+        height: 220px;
+    }
+
 } 
+
+ESTILOS DEL FORMULARIO 
+.registro {
+    background-color: white;
+    padding: 30px;
+    margin: 20px auto;
+    border-radius: 15px;
+    max-width: 1100px;
+}
+
+.registro h2 {
+    color: #92278f;
+    margin-bottom: 20px;
+}
+
+.registro form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.registro label {
+    font-weight: bold;
+    color: #333;
+}
+
+.registro input[type="text"] {
+    padding: 12px;
+    border: 2px solid #e6a5d1;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.registro input[type="submit"] {
+    background-color: #92278f;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.registro input[type="submit"]:hover {
+    background-color: #701c70;
+}
